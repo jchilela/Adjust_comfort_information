@@ -1,0 +1,40 @@
+<ion-view title="General thermal comfort">
+  <ion-content class="has-header">
+   
+<div class="list">
+  <label class="item item-input">
+    <input type="text" id="tcomfort" placeholder="Thermal comfort">
+  </label>
+  <label class="item item-input">
+    <input type="text" id="acept" placeholder="Acceptability">
+  </label>
+  <label class="item item-input">
+    <textarea placeholder="Preferences" id="pref"></textarea>
+  </label>
+</div>
+
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Sensation
+    </div>
+    <select id="sens">
+      <option>Very hot, very uncomfortable</option>
+      <option selected> Hot, very unacceptable  </option>
+      <option>Comfortable and acceptable</option>
+      <option>Warm, uncomfortable, unacceptable</option>
+      <option>Slightly warm, slightly unacceptable</option>
+      <option>Slightly cool, slightly unacceptable</option>
+      <option>Cool and unacceptable</option>
+      <option>Cold, very unacceptable</option>
+  
+    </select>
+  </label>
+
+</div>
+
+ <a  class="button button-full button-positive" style="width:100%" onclick="save3(); redirect3();setValue3();msg();">Next</a>
+
+
+  </ion-content>
+</ion-view>
