@@ -94,6 +94,29 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+.state('app.strategie1', {
+      url: "/playlists/4",
+      views: {
+        'menuContent' :{
+          templateUrl: "strategies.html",
+          controller: 'PlaylistCtrl4'
+        }
+      }
+    })
+
+
+
+.state('app.mqtt', {
+      url: "/playlists/5",
+      views: {
+        'menuContent' :{
+          templateUrl: "s1.html",
+          controller: 'PlaylistCtrl5'
+        }
+      }
+    })
+
+
 ;
 
 

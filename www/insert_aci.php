@@ -17,12 +17,12 @@ $tcomfort= $_POST['tcomfort'];
 $acept= $_POST['acept'];
 $pref= $_POST['pref'];
 $sens= $_POST['sens'];
-
+$oba= $_POST['oba'];
 
 
 $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ('Could not connect to server\n' . pg_last_error()); 
 
-$query = "INSERT INTO ca_survey  VALUES ('$idade', '$gender','$weight','$atime', '$dtime','$tcomfort', '$acept','$pref', '$sens')";
+$query = "INSERT INTO ca_survey VALUES (DEFAULT,'$idade', '$gender','$weight','$atime', '$dtime','$tcomfort', '$acept','$pref', '$sens','$oba')";
 $result = pg_query($query) or die('Cannot execute query: $query\n' . pg_last_error()); 
 
 
